@@ -15,5 +15,4 @@ jobs:
           channel: "dev"
       - uses: erickzanardo/flutter-gh-pages@v2
         with:
-          workingDir: task_manager
           useCanvasKit: true    
