@@ -1,7 +1,7 @@
 name: Gh-pages  Deploy
 
 on:
-  commit:
+  push:
     branches: [ master ]
 
 jobs:
