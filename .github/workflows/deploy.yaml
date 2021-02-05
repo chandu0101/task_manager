@@ -1,0 +1,19 @@
+name: Gh-pages  Deploy
+
+on:
+  commit:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    stesp:
+      - uses: actions/checkouts@v2
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: "master"
+      - uses: erickzanardo/flutter-gh-pages@v2
+        with:
+          workingDir: task_manager
+          useCanvasKit: true    
